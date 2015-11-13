@@ -6,7 +6,7 @@
     docker run \ 
     -idt \
     -p 3306:3306 \
-    -v <data_path>:/var/lib/mysql 
+    -v <data_path>:/var/lib/mysql \
     --name mysql \
     -e MYSQL_ROOT_PASSWORD=root \
     berialcheng/docker-mysql
