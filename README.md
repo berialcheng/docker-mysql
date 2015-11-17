@@ -3,8 +3,7 @@
 
 ###Start the MySQL Server
 ```
-    docker run \ 
-    -idt \
+    docker run -idt \
     -p 3306:3306 \
     -v <data_path>:/var/lib/mysql \
     --name mysql \
@@ -14,8 +13,7 @@
 
 ###Connect through shell
 ```
-	docker run \
-	-it \
+	docker run -it \
 	--link mysql:mysql \
 	--rm \
 	-v /Users:/tmp \
